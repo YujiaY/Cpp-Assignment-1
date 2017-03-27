@@ -1,0 +1,22 @@
+Q10.How to say "Have Dinner" in Chinese?
+A10."Chi Wan Fan"
+Q03.How to say "Good evening" in Chinese?
+A03."Wan Shang Hao"
+Q07.How to say "Goodbye" in Chinese?
+A07."Zai Jian"
+Q01.How to say "Good morning" in Chinese?
+A01."Zao Shang Hao"
+Q02.How to say "Good aftrenoon" in Chinese?
+A02."Xia Wu Hao"
+Q04.How to say "How do you do" in Chinese?
+A04The Chinese people just say "Ni hao".
+Q05.How to say "Thank you" in Chinese?
+A05."Xie Xie"
+Q06.How to say "No worries"in Chinese?
+A06."Bu Yong Xie"
+Q08.How to say "Have Breakfast" in Chinese?
+A08."Chi Zao Fan"
+Q09.How to say "Have Lunch" in Chinese?
+A09."Chi Wu Fan"
+
+
