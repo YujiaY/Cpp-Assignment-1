@@ -14,29 +14,40 @@ string filename = "QandA.txt";
 struct questionaries {
 	string question;
 	string answer;
+
+	void printstruct(const questionaries& questionary) {
+		cout << questionary.question << endl;
+		cout << questionary.answer << endl;
+		}
+
 } questionariesarray[row];
 
 void print_arr(string arr[row][col]);
 
 void searching();
 
-void readfromfile(string filename);
+void readfromfile(const string& filename);
 
 
 int main()
 {
 	readfromfile("QandA.txt");
 
-	//print the original array:
-	cout << "Now the original array are showed below:" << endl << endl;
-	print_arr(qanda);
-
-	// sort the arrar[] using user-defined structure
 	for (int n = 0; n < row; ++n) {
 		questionariesarray[n].question = qanda[n][0];
 		questionariesarray[n].answer = qanda[n][1];
 	}
-	//  Another way to do the searching job(*):	std::sort(questionariesarray, questionariesarray + row, myfunction);
+
+	//print the original array:
+	cout << endl << "Now the original array are showed below:"  << endl << endl;
+    
+	for (auto element : questionariesarray)
+	           element.printstruct(element) ;
+	cout << endl;
+
+	// sort the arrar[] using user-defined structure
+
+
 	std::sort(questionariesarray, questionariesarray + row, [](questionaries a, questionaries b) { return a.question < b.question; });
 
 	// change the array to be sorted:
@@ -50,7 +61,7 @@ int main()
 
 	print_arr(qanda);
 
-	//searching for keyword£º
+	//searching for keyword
 
 	searching();
 
@@ -99,7 +110,7 @@ void searching() {
 	cout << "There are totally " << resultcount << " results found." << endl;
 }
 
-void readfromfile(string filename) {
+void readfromfile(const string& filename) {
 
 	ifstream inf(filename);
 	string strInput;
